@@ -1,9 +1,9 @@
-title: Parchment
-author: pro-panda
-subtitle: The life of a frustrated engineer
+title: Love Within the Bits
+author: lovewithinthebits
+subtitle: Archive of my creations!
 
-url: "https://rahulbothra.com"
-baseurl: "/parchment"
+url: "https://apricotrieke.github.io/"
+baseurl: ""
 
 footer_only_homepage: true
 footer_url: "https://github.com/rhl-bthr"
