@@ -23,5 +23,3 @@ Here's a new paragraph for you.
 - Basic Mobile Support
 - SEO Plugin
 
-## Contact
-Email me, [tom@tomjack.ca](mailto:tom@tomjack.ca).
