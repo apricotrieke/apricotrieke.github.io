@@ -1,13 +1,13 @@
 # Site Specific Configuration
-name: LightSpeed
-description: A simple Jekyll theme
-url: https://example.com
-author: tajacks
-timezone: America/Toronto
-timezone_short: ET
+name: Love Within the Bits
+description: Alexander Rieke's personal website
+url: https://apricotrieke.github.io/
+author: Alexander Rieke
+timezone: America
+timezone_short: PST
 
 # Keywords
-keywords: ['seo', 'key', 'words']
+keywords: ['cybersecurity', 'programming', 'computer-science', 'music', 'bass', 'blog', 'technology']
 
 # Analytics (Plausible requires sign-up)
 analytics:

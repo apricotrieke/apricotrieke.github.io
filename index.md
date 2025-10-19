@@ -3,10 +3,7 @@ layout: default
 title: LightSpeed Contact
 ---
 
-## Chris is gay!!!
-
 ## About
-Chris is gay!!!
 LightSpeed is a lightweight Jekyll theme designed to be privacy-friendly (~~no~~ _very little_ JavaScript), fast, and
 excellent at delivering content.
 
