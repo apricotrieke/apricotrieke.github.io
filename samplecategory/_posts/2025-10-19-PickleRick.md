@@ -258,11 +258,11 @@ genghis@khan:~/Boxes/PickleRick$ curl 10.10.193.176
 
 Sweet, we seem to have some sort of username “R1ckRul3s” maybe this is for the login page we found? At this point I just decided to try the login with this username and try the password “Wubbalubbadubdub” which is the only string of text I found on the robots.txt page. To my surprise I’m greeted with this!
 
-![Screenshot_2025-05-07_18_59_51.png](2025-10-19-PickleRickPhotos/Screenshot_2025-05-07_18_59_51.png)
+![Screenshot_2025-05-07_18_59_51.png]({{ site.baseurl }}/assets/images/posts/picklerick/Screenshot_2025-05-07_18_59_51.png)
 
 Interesting… Let’s try entering some commands, `ls -l` yields this output 
 
-![Screenshot_2025-05-07_19_02_59.png](2025-10-19-PickleRickPhotos/Screenshot_2025-05-07_19_02_59.png)
+![Screenshot_2025-05-07_19_02_59.png]({{ site.baseurl }}/assets/images/posts/picklerick/Screenshot_2025-05-07_19_02_59.png)
 
 Okay here’s a lot of stuff, I can use the `less` command to reveal the first ingredient “mr. meeseek hair”
 
@@ -371,7 +371,7 @@ https://www.revshells.com/
 
 This website is very convenient because it generates a multitude of different reverse shell payloads, and automatically fills in your IP and port information, and also gives you a command to copy for your listener
 
-![Screenshot_2025-05-08_09_08_14.png](2025-10-19-PickleRickPhotos/Screenshot_2025-05-08_09_08_14.png)
+![Screenshot_2025-05-08_09_08_14.png]({{ site.baseurl }}/assets/images/posts/picklerick/Screenshot_2025-05-08_09_08_14.png)
 
 Once we’ve cooked up our payload, our next step towards getting the reverse shell is spinning up our listener. Even though this website generates our listener for us, let’s do a command breakdown on the listener command!
 
@@ -390,21 +390,21 @@ nc -lvnp 4444
 
 So, let’s go ahead and punch it into the command line!
 
-![Screenshot_2025-05-08_09_53_59.png](2025-10-19-PickleRickPhotos/Screenshot_2025-05-08_09_53_59.png)
+![Screenshot_2025-05-08_09_53_59.png]({{ site.baseurl }}/assets/images/posts/picklerick/Screenshot_2025-05-08_09_53_59.png)
 
 Alright, the listener seems to be working. Now let’s input our payload to the command panel…
 
-![Screenshot_2025-05-08_09_59_17.png](2025-10-19-PickleRickPhotos/Screenshot_2025-05-08_09_59_17.png)
+![Screenshot_2025-05-08_09_59_17.png]({{ site.baseurl }}/assets/images/posts/picklerick/Screenshot_2025-05-08_09_59_17.png)
 
 After clicking execute, let’s check back on our terminal window that we ran the listener on
 
-![Screenshot_2025-05-08_10_00_05.png](2025-10-19-PickleRickPhotos/Screenshot_2025-05-08_10_00_05.png)
+![Screenshot_2025-05-08_10_00_05.png]({{ site.baseurl }}/assets/images/posts/picklerick/Screenshot_2025-05-08_10_00_05.png)
 
 Sweet! We’ve got a shell.
 
 Now let’s navigate to where we found that second ingredient at `/home/rick/second ingredients` and see if we can read it.
 
-![Screenshot_2025-05-08_10_04_17.png](2025-10-19-PickleRickPhotos/Screenshot_2025-05-08_10_04_17.png)
+![Screenshot_2025-05-08_10_04_17.png]({{ site.baseurl }}/assets/images/posts/picklerick/Screenshot_2025-05-08_10_04_17.png)
 
 Nice! That’s one more ingredient down.
 
@@ -412,7 +412,7 @@ Nice! That’s one more ingredient down.
 
 I’m gonna be perfectly honest, I spent a long time here overthinking what I needed to do, looking all over the place and thinking for a long time. Then at one point I realized I never checked to see if I have super user privileges as www-data, and then I just decided to try using a command with `sudo` and it worked! At that point I used `sudo -l` to see how many commands I had super user privileges for.
 
-![1.png](2025-10-19-PickleRickPhotos/1.png)
+![1.png]({{ site.baseurl }}/assets/images/posts/picklerick/1.png)
 
 Oh? All of them? Without needing a password? That’s nice.
 
@@ -420,7 +420,7 @@ A simple `sudo su -`  switches me to the root user, and I’m greeted with this
 
  
 
-![2.png](2025-10-19-PickleRickPhotos/2.png)
+![2.png]({{ site.baseurl }}/assets/images/posts/picklerick/2.png)
 
 At this point I couldn’t tell whether or not to be happy I had finally figure it out, or disappointed in myself that the final step that had taken me the longest time, was in fact, the simplest. 
 
