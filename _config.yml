@@ -2,9 +2,14 @@
 name: Love Within the Bits
 description: Alexander Rieke's personal website
 url: https://apricotrieke.github.io/
+baseurl: 
 author: Alexander Rieke
 timezone: America
 timezone_short: PST
+
+# This tells Jekyll to include all subfolders under _posts/ when building.
+include:
+  - "_posts/*"
 
 # Keywords
 keywords: ['cybersecurity', 'programming', 'computer-science', 'music', 'bass', 'blog', 'technology']

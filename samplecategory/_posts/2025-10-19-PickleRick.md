@@ -1,3 +1,10 @@
+---
+layout: post   # or article, depending on Lightspeed version
+title: "Pickle Rick"
+date: 2025-10-19
+---
+
+
 # Pickle Rick
 
 https://tryhackme.com/room/picklerick
